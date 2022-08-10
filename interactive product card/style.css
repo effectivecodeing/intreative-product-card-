@@ -1,0 +1,172 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0;
+}
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr repeat(5, 1fr);
+  height: 100vh;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  background-color: rgb(252, 252, 252);
+  box-shadow: 0 0 20px 1px rgb(59, 59, 59);
+  height: 50px;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 0.5fr 2fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+  position: absolute;
+}
+
+.logo {
+  /* background-color: rebeccapurple; */
+  height: 100%;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+.logo img {
+  height: 50px;
+  width: 80px;
+}
+.navbarpage-btn {
+  /* background-color: rebeccapurple; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  list-style: none;
+  font-family: 'Cabin', sans-serif;
+}
+.cart-section {
+  /* background-color: rebeccapurple; */
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  list-style: none;
+}
+
+.ad {
+  background-color: orange;
+  height: 100vh;
+  overflow: hidden;
+}
+.ad img {
+  height: 100%;
+  width: 70%;
+  transform: translateX(250px) translateY(20px);
+  object-fit: cover;
+}
+
+.ad p {
+  position: absolute;
+  transform: translateY(-200px) translateX(100px);
+  font-size: 1.5rem;
+  color: white;
+  height: 50px;
+  width: 300px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.ad button {
+  position: absolute;
+  background-color: transparent;
+  color: white;
+  height: 30px;
+  width: 100px;
+  border-radius: 20px;
+  border: 2px solid white;
+  transform: translateY(400px) translateX(-610px);
+}
+/*  */
+.descp {
+  /* background-color: rgb(155, 10, 10); */
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 0.2fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+.left-side {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+.left-side .title {
+  color: gray;
+  font-size: 2rem;
+  width: 300px;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+.left-side .para {
+  width: 300px;
+  font-size: 0.9rem;
+  font-family: 'Signika Negative', sans-serif;
+}
+.left-side button {
+  background-color: rgb(201, 17, 17);
+  color: white;
+  transform: translateX(-100px);
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 20px;
+}
+
+.descp .line {
+  /* background-color: gray; */
+  border: 1px dashed rgba(0, 0, 0, 0.592);
+  height: 300px;
+  width: 2px;
+}
+
+.info {
+  background-color: orange;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  place-items: center;
+}
+
+.left-section {
+  width: 200px;
+}
+.info p {
+  width: 400px;
+  color: rgb(245, 245, 245);
+  font-family: 'Signika Negative', sans-serif;
+}
+
+/*  */
+.product {
+  /* background-color: red; */
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product img {
+  height: 200px;
+  width: 200px;
+  transform: translateY(-70px) translateX(-300px) rotateZ(0deg);
+  transition: all 0.9s linear;
+}
